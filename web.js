@@ -2,10 +2,10 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-//buf.toString(fs.readFileSync(index.html))
+var buffer = fs.readFileSync(index.html);
 
 app.get('/', function(request, response) {
-   response.send(buf.toString(fs.readFileSync(index.html)))
+   response.send(buf.toString(buffer);
    //response.send('Hello World3!');
 });
 
