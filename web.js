@@ -7,7 +7,7 @@ var app = express.createServer(express.logger());
 //var buffer2 = buf.toString(buffer);
 
 app.get('/', function(request, response) {
-    response.send(fs.readFileSync(__dirname + '/index.html'));   
+    response.end(fs.readFileSync(__dirname + '/index.html'));
     //response.send(buffer2);
     //response.send('Hello World3!');
 });
